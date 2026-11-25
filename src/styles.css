@@ -2147,6 +2147,17 @@ section[id] {
   }
 }
 
+@media (max-width: 22rem) {
+  .site-nav {
+    gap: 0.1rem;
+    padding-inline: 0.35rem;
+  }
+
+  .site-nav a {
+    padding-inline: 0.15rem;
+  }
+}
+
 @media (max-width: 38rem) {
   .header-invite {
     padding-inline: 0.95rem;

@@ -1,0 +1,142 @@
+.case-showcase {
+  margin-top: clamp(3.5rem, 7vw, 7rem);
+}
+
+.site-body .case-showcase-jump {
+  margin-inline-start: 1.25rem;
+}
+
+.case-project-group + .case-project-group {
+  margin-top: clamp(2rem, 4vw, 3.5rem);
+}
+
+.case-project-group-title {
+  margin: 0 0 1rem;
+  color: var(--agi-gold-warm);
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
+.case-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.8rem, 1.7vw, 1.5rem);
+}
+
+.case-project-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  border: 1px solid var(--agi-light-line);
+  border-radius: 0.9rem;
+  background: var(--agi-paper);
+  color: var(--agi-wine);
+}
+
+.case-project-shot {
+  position: relative;
+  display: grid;
+  aspect-ratio: 16 / 10;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 0.85rem 0.85rem 0 0;
+  border-block-end: 1px solid var(--agi-line);
+  background: var(--agi-cream);
+}
+
+.case-project-shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.case-project-shot:hover .photo-carousel-enlarge,
+.case-project-shot:focus-visible .photo-carousel-enlarge {
+  background: var(--agi-wine);
+  color: var(--agi-paper);
+}
+
+.case-project-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.65rem;
+  align-items: flex-start;
+  padding: clamp(1rem, 2.4vw, 1.75rem);
+}
+
+.case-project-copy h5 {
+  margin: 0;
+  font-family: var(--agi-serif);
+  font-size: clamp(1.48rem, 2.5vw, 2.2rem);
+  font-weight: 450;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+.case-project-copy p {
+  max-width: 52ch;
+  margin: 0;
+  color: var(--agi-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.case-project-copy .case-project-note {
+  color: var(--agi-gold-ink);
+  font-size: 0.78rem;
+}
+
+.case-project-demo {
+  display: inline-flex;
+  gap: 0.3rem;
+  align-items: center;
+  margin-top: auto;
+  padding-block: 0.25rem;
+  color: var(--agi-gold-ink);
+  font-size: 0.85rem;
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.case-project-demo svg {
+  width: 1em;
+  height: 1em;
+}
+
+.case-project-secondary {
+  gap: 0.55rem;
+}
+
+.case-project-secondary img {
+  width: 3.7rem;
+  height: auto;
+  border: 1px solid var(--agi-line);
+  border-radius: 0.2rem;
+}
+
+.case-project-dialog .photo-dialog-image {
+  background: var(--agi-cream);
+}
+
+.case-project-dialog .photo-dialog-header button {
+  flex-shrink: 0;
+}
+
+.case-project-original {
+  justify-self: end;
+}
+
+@media (min-width: 67rem) {
+  .case-project-grid--platforms {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 42rem) {
+  .case-project-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

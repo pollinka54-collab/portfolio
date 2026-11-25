@@ -1,4 +1,5 @@
 import { agency, agencyReach, cases } from "@/content/speaker";
+import { CaseShowcase } from "./case-showcase";
 
 const vectors = [
   {
@@ -46,6 +47,9 @@ export function CasesLedger() {
             <a className="agency-link" href={agency.website} target="_blank" rel="noreferrer">
               Сайт AGI Agency <span aria-hidden="true">↗</span>
             </a>
+            <a className="agency-link case-showcase-jump" href="#case-projects">
+              Смотреть проекты <span aria-hidden="true">↓</span>
+            </a>
             <ul className="cases-scale" aria-label="Опыт AGI Agency в цифрах">
               {Object.values(agencyReach).map((fact) => (
                 <li key={fact.label}>
@@ -69,6 +73,8 @@ export function CasesLedger() {
             </li>
           ))}
         </ul>
+
+        <CaseShowcase />
 
         <section className="cases-examples" aria-labelledby="cases-examples-heading">
           <h3 className="cases-subheading" id="cases-examples-heading">Примеры применения</h3>

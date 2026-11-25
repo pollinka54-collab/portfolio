@@ -2,6 +2,7 @@ import { speaker } from "@/content/speaker";
 
 const links = [
   { href: "#about", label: "О Полине" },
+  { href: "#awards", label: "Награды" },
   { href: "#topics", label: "Темы" },
   { href: "#experience", label: "Выступления" },
   { href: "#media", label: "Медиа" },

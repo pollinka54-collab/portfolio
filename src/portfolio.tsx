@@ -1,4 +1,5 @@
 import { AboutSection } from "@/components/site/about-section";
+import { AwardsSection } from "@/components/site/awards-section";
 import { CasesLedger } from "@/components/site/cases-ledger";
 import { ContactSection } from "@/components/site/contact-section";
 import { FormatsSelector } from "@/components/site/formats-selector";
@@ -49,6 +50,7 @@ export function Portfolio() {
         <ScrollScrub scenes={scrollScrubScenes} theme={scrollScrubTheme} />
         <MetricsStrip />
         <AboutSection />
+        <AwardsSection />
         <TopicsExplorer />
         <OutcomesSection />
         <FormatsSelector />

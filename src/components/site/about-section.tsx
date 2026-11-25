@@ -1,4 +1,4 @@
-import { agency, awards, credentials, speaker } from "@/content/speaker";
+import { agency, credentials, speaker } from "@/content/speaker";
 import { CopyBioButton } from "./copy-bio-button";
 
 export function AboutSection() {
@@ -68,19 +68,6 @@ export function AboutSection() {
               )}
             </div>
           </article>
-        ))}
-      </div>
-
-      <div className="section-shell awards-ledger">
-        {awards.map((award) => (
-          <a href={award.source} target="_blank" rel="noreferrer" key={award.year}>
-            <span className="award-year">{award.year}</span>
-            <span>
-              <strong>{award.title}</strong>
-              <small>{award.detail}</small>
-            </span>
-            <span className="award-arrow" aria-hidden="true">↗</span>
-          </a>
         ))}
       </div>
     </section>

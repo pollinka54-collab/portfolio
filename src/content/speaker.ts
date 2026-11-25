@@ -101,23 +101,6 @@ export const credentials = [
   },
 ] as const;
 
-export const awards = [
-  {
-    year: "2020",
-    title: "Победитель регионального конкурса «Предприниматель года - 2020»",
-    detail: "Номинация «Лучший проект самозанятых»",
-    source:
-      "https://pravda-nn.ru/articles/den-predprinimatelstva-v-nizhnem-novgorode-vruchenie-nagrad-i-kulinarnyj-poedinok/",
-  },
-  {
-    year: "2024",
-    title: "Предприниматель 2024 года по Нижегородской области",
-    detail: "Номинация «Маркетинг». Формулировка из официальной программы XI Международного ИТ-форума",
-    source:
-      "https://oiitf.ru/wp-content/uploads/2026/03/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0-%D0%BE%D1%82-13.03.26.pdf",
-  },
-] as const;
-
 export const topicFilters: { key: "all" | TopicAudience; label: string }[] = [
   { key: "all", label: "Все темы" },
   { key: "owners", label: "Собственникам" },

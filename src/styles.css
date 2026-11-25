@@ -685,51 +685,6 @@ section[id] {
   transform: rotate(12deg);
 }
 
-.awards-ledger {
-  margin-top: clamp(6rem, 10vw, 10rem);
-  border-top: 1px solid var(--agi-line);
-}
-
-.awards-ledger a {
-  display: grid;
-  grid-template-columns: 7rem minmax(0, 1fr) auto;
-  gap: 2rem;
-  align-items: center;
-  padding-block: 1.6rem;
-  border-bottom: 1px solid var(--agi-line);
-  transition: padding-inline 220ms ease, background 220ms ease;
-}
-
-.awards-ledger a:hover {
-  padding-inline: 1rem;
-  background: rgb(247 242 233 / 0.62);
-}
-
-.award-year {
-  font-family: var(--agi-serif);
-  font-size: 2.2rem;
-  font-style: italic;
-}
-
-.awards-ledger strong,
-.awards-ledger small {
-  display: block;
-}
-
-.awards-ledger strong {
-  margin-bottom: 0.3rem;
-  font-size: 1rem;
-}
-
-.awards-ledger small {
-  color: var(--agi-muted);
-}
-
-.award-arrow {
-  color: var(--agi-gold-ink);
-  font-size: 1.4rem;
-}
-
 .topics-section {
   background: var(--agi-paper);
 }
@@ -2216,15 +2171,6 @@ section[id] {
 
   .metric-item {
     min-height: 12rem;
-  }
-
-  .awards-ledger a {
-    grid-template-columns: 4.5rem 1fr auto;
-    gap: 1rem;
-  }
-
-  .award-year {
-    font-size: 1.7rem;
   }
 
   .programs-support-grid article,

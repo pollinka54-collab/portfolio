@@ -1,4 +1,5 @@
 import { agency, agencyReach, cases } from "@/content/speaker";
+import { CaseExamples } from "./case-examples";
 import { CaseShowcase } from "./case-showcase";
 
 const vectors = [
@@ -16,17 +17,6 @@ const vectors = [
     title: "Повышение качества",
     description: "Проверяем результат по единым правилам и сокращаем число ошибок и доработок.",
     measure: "Считаем ошибки и доработки",
-  },
-] as const;
-
-const examples = [
-  {
-    title: "Дашборд по продажам и финансам",
-    description: "ИИ формирует сводку по данным о продажах и финансовых показателях. Руководитель видит итоги месяца в одном дашборде, а команда тратит меньше времени на ручной сбор данных.",
-  },
-  {
-    title: "Подготовка публикаций для Telegram",
-    description: "ИИ составляет контент-план по целям бизнеса, готовит черновики постов и подбирает изображения. После проверки командой согласованные материалы ставятся в расписание.",
   },
 ] as const;
 
@@ -76,17 +66,7 @@ export function CasesLedger() {
 
         <CaseShowcase />
 
-        <section className="cases-examples" aria-labelledby="cases-examples-heading">
-          <h3 className="cases-subheading" id="cases-examples-heading">Примеры применения</h3>
-          <div className="cases-examples-grid">
-            {examples.map(({ title, description }) => (
-              <article key={title}>
-                <h4>{title}</h4>
-                <p>{description}</p>
-              </article>
-            ))}
-          </div>
-        </section>
+        <CaseExamples />
 
         <section className="cases-results" aria-labelledby="cases-results-heading">
           <h3 className="cases-subheading" id="cases-results-heading">Результаты проектов</h3>

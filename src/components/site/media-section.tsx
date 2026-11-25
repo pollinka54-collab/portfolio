@@ -15,6 +15,9 @@ export function MediaSection() {
             <span aria-hidden="true">↗</span>
           </a>
           <SocialLinks />
+          <a className="media-publications-link" href="#publications">
+            Публикации и упоминания <span aria-hidden="true">↓</span>
+          </a>
         </div>
         <div className="video-frame">
           <iframe

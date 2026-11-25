@@ -9,6 +9,7 @@ import { MetricsStrip } from "@/components/site/metrics-strip";
 import { OutcomesSection } from "@/components/site/outcomes-section";
 import { PhotoGallery } from "@/components/site/photo-gallery";
 import { ProgramsSection } from "@/components/site/programs-section";
+import { PublicationsSection } from "@/components/site/publications-section";
 import { SiteHeader } from "@/components/site/site-header";
 import { SocialLinks } from "@/components/site/social-links";
 import { SpeakingSection } from "@/components/site/speaking-section";
@@ -57,6 +58,7 @@ export function Portfolio() {
         <MethodOrbit />
         <ProgramsSection />
         <MediaSection />
+        <PublicationsSection />
         <PhotoGallery />
         <ContactSection />
       </main>

@@ -74,17 +74,6 @@ export const caseProjectGroups: readonly CaseProjectGroup[] = [
     title: "Сайты",
     projects: [
       {
-        title: "«Академоптика»",
-        description: "Концепция редизайна сайта центра коррекции зрения. Пациент может найти нужную услугу, посмотреть цены и специалистов и перейти к записи.",
-        screenshot: {
-          file: "website-akademoptika",
-          alt: "Первый экран концепции сайта «Академоптика» с навигацией по услугам и кнопкой записи",
-          width: 1440,
-          height: 900,
-        },
-        website: "https://pollinka54-collab.github.io/akademoptika-website/",
-      },
-      {
         title: "BOUQUET",
         description: "Демоверсия сайта цветочного ателье. В ней есть каталог, корзина и подбор букета по поводу, оттенкам и бюджету.",
         screenshot: {
